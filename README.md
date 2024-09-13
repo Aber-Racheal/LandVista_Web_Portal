@@ -5,8 +5,14 @@ LandVista is a web application designed to simplify the understanding of flood r
 
 
 
+This is the current progress of the web application though not yet deployed. Work in progress!
 
 
+This is the Landing page
+![alt text](<Screenshot from 2024-09-13 07-51-40.png>)
+
+
+This is the Map page where a user can make a location search and get flood risk information.
 ![alt text](<Screenshot from 2024-09-13 07-49-58.png>)
 
 
