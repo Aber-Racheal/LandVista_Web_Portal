@@ -3,6 +3,13 @@ LandVista Project
 
 LandVista is a web application designed to simplify the understanding of flood risks. By combining advanced weather data with detailed land maps, LandVista provides insights to help users assess the flood risk of properties, with a specific focus on Nairobi. The application features an interactive map with flood risk indicators and a responsive user interface.
 
+
+
+
+
+![alt text](<Screenshot from 2024-09-13 07-49-58.png>)
+
+
 Features
 
 Interactive Map: Visualize flood risk on a map using Google Maps with markers and risk circles.
