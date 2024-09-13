@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image'; // Correct import
+
 import React from 'react';
 
 const LandingPage = () => {
@@ -6,7 +8,13 @@ const LandingPage = () => {
     <div className="min-h-screen flex flex-col bg-teal-600">
       <div className="flex-grow flex flex-col justify-between">
         <header className="p-4 flex justify-center">
-          <img src="/api/placeholder/150/50" alt="LandVista Logo" className="h-12" />
+          <Image 
+            src="/api/placeholder/150/50" 
+            alt="LandVista Logo" 
+            className="h-12" 
+            width={150} // Add width
+            height={50} // Add height
+          />
         </header>
         
         <svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">

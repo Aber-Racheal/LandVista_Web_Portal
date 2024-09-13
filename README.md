@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+LandVista Project
 
-## Getting Started
 
-First, run the development server:
+LandVista is a web application designed to simplify the understanding of flood risks. By combining advanced weather data with detailed land maps, LandVista provides insights to help users assess the flood risk of properties, with a specific focus on Nairobi. The application features an interactive map with flood risk indicators and a responsive user interface.
 
-```bash
-npm run dev
+Features
+
+Interactive Map: Visualize flood risk on a map using Google Maps with markers and risk circles.
+Responsive Design: Adaptable interface for both desktop and mobile views.
+Search Functionality: Search for specific wards and update the map view accordingly.
+Information Panel: Displays key data about land area, rainfall, and disclaimers.
+Action Buttons: Options for feedback, download, and sharing, with adaptive UI for different screen sizes.
+
+
+Tech Stack
+
+
+Next.js: Framework for React applications, used for server-side rendering and static site generation.
+React: JavaScript library for building user interfaces.
+Tailwind CSS: Utility-first CSS framework for rapid UI development.
+Google Maps API: Provides map rendering and geolocation services.
+Lucide Icons: Provides a set of icons for various actions and features.
+
+
+Getting Started
+
+
+To run this project locally, follow these steps:
+
+Prerequisites
+
+
+Node.js (version 14 or later)
+Yarn or npm
+Setup
+Clone the repository:
+
+
+git clone https://github.com/Aber-Racheal/LandVista_Web_Portal.git
+cd LandVista_Web_Portal
+Install dependencies:
+
+
+yarn install
 # or
+npm install
+Set up environment variables:
+
+Create a .env.local file in the root directory and add your Google Maps API key:
+
+plaintext
+
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+Run the development server:
+
+
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
-```
+npm run dev
+The application should now be running at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Available Scripts
 
-## Learn More
+yarn dev or npm run dev: Starts the development server.
+yarn build or npm run build: Builds the application for production.
+yarn start or npm start: Starts the production server after building.
+yarn lint or npm run lint: Runs linting checks on the codebase.
+Directory Structure
+/pages: Contains the Next.js pages (e.g., LandingPage, MapPage).
+/components: Contains reusable React components.
+/public: Static assets like images.
+/styles: Tailwind CSS configurations and other styling.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+We welcome contributions to improve the LandVista project. Please follow these guidelines:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Fork the repository and create a feature branch.
+Make your changes and ensure they are well-tested.
+Submit a pull request with a clear description of the changes and the motivation behind them.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Contact
+
+
+For questions or support, please contact rachealaberr@gmail.com.
