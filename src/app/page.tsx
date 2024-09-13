@@ -1,101 +1,39 @@
-import Image from "next/image";
+import Link from 'next/link';
+import React from 'react';
 
-export default function Home() {
+const LandingPage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen flex flex-col bg-teal-600">
+      <div className="flex-grow flex flex-col justify-between">
+        <header className="p-4 flex justify-center">
+          <img src="/api/placeholder/150/50" alt="LandVista Logo" className="h-12" />
+        </header>
+        
+        <svg className="w-full" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 50L60 45.8333C120 41.6667 240 33.3333 360 29.1667C480 25 600 25 720 33.3333C840 41.6667 960 58.3333 1080 62.5C1200 66.6667 1320 58.3333 1380 54.1667L1440 50V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V50Z" fill="white"/>
+        </svg>
+        
+      </div>
+       
+      <main className="flex-grow flex flex-col md:flex-row justify-center items-center text-white px-4 bg-white space-y-8 md:space-x-16 md:space-y-0">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          <span className="text-custom-orange text-4xl md:text-5xl">WELCOME </span>
+          <span className="text-teal-600 text-4xl md:text-5xl">TO </span>
+          <span className="text-custom-orange text-4xl md:text-5xl">LANDVISTA</span>
+        </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="text-center">
+          <p className="text-sm md:text-lg max-w-2xl mb-8 text-teal-600 mx-auto text-justify">
+            LandVista simplifies understanding flood risks by combining advanced weather data with detailed land maps. We analyze factors like rainfall, elevation, and soil types to predict potential flooding, focusing specifically on Nairobi. With our insights, you can confidently assess the flood risk of any property, making informed decisions whether you're buying, selling, or developing land. Discover how LandVista can safeguard your investments today!
+          </p>
+
+          <Link href="/map" className="text-xl md:text-2xl px-6 py-3 bg-custom-orange text-white rounded-md text-center hover:bg-[#D77A54] transition-colors">
+            Discover
+          </Link>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
-}
+};
+
+export default LandingPage;

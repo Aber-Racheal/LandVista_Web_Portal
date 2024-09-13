@@ -7,10 +7,24 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      // ... other screen sizes
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'custom-orange': '#DC8B6F',
+        'custom-dark-orange': '#CA7758',
+        'custom-dark-blue':'#009FDE',
+        'custom-teal': '#008080',
+        'custom-20': '20px',
+        'custom-30': '30px',
+        'custom-50': '50px',
+        fontSize: {
+          '25px': '25px',
+        },
       },
     },
   },
